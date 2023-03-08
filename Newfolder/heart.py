@@ -26,7 +26,7 @@ if (selected == 'Home'):
     
     with col1:
         
-        cp = st.number_input('Chest Pain (0 - 3)', min_value=(0), max_value=(2))
+        cp = st.number_input('Chest Pain (0 - 3)', min_value=(0), max_value=(3))
         
     with col2:
         
@@ -46,7 +46,7 @@ if (selected == 'Home'):
 
     with col3:
     
-        thal = st.number_input('Thalassemia (1 - 3)', min_value=(0), max_value=(3))
+        thal = st.number_input('Thalassemia (1 - 3)', min_value=(1), max_value=(3))
     
     with col3:
         
