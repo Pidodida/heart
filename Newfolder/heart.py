@@ -46,7 +46,7 @@ if (selected == 'Home'):
 
     with col3:
     
-        thal = st.number_input('Thalassemia', min_value=(0), max_value=(3))
+        thal = st.number_input('Thalassemia (1 - 3)', min_value=(0), max_value=(3))
     
     with col3:
         
