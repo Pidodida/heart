@@ -34,7 +34,7 @@ if (selected == 'Home'):
         
     with col2:
         
-        restecg = st.number_input('Resting ECG (0 - 3)', min_value=(0), max_value=(2))
+        restecg = st.number_input('Resting ECG (0 - 2)', min_value=(0), max_value=(2))
     
     with col2:
         
@@ -42,7 +42,7 @@ if (selected == 'Home'):
         
     with col3:
         
-        exang = st.number_input('Exercise induced Angina', min_value=(0), max_value=(1))
+        exang = st.number_input('Exercise induced Angina (0-1)', min_value=(0), max_value=(1))
 
     with col3:
     
