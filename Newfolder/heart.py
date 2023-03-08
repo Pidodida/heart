@@ -2,7 +2,7 @@ import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-something_model = pickle.load(open('C:/Users/pidod/Desktop/Newfolder/heart.sav', 'rb'))
+something_model = pickle.load(open('heart.sav', 'rb'))
 with st.sidebar:
     
     selected = option_menu('Heart Disease Prediction System', 
