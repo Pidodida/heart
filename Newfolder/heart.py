@@ -2,7 +2,7 @@ import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-something_model = pickle.load(open('Newfolder/heart.sav', 'rb'))
+something_model = pickle.load(open('C:/Users/pidod/Desktop/Newfolder/heart.sav', 'rb'))
 with st.sidebar:
     
     selected = option_menu('Heart Disease Prediction System', 
@@ -22,11 +22,11 @@ if (selected == 'Home'):
         
     with col1:
         
-        sex = st.number_input('Sex', min_value=(0), max_value=(1))
+        sex = st.number_input('Sex (1 = Male 0 = Female)', min_value=(0), max_value=(1))
     
     with col1:
         
-        cp = st.number_input('Chest Pain', min_value=(0), max_value=(2))
+        cp = st.number_input('Chest Pain (0 - 3)', min_value=(0), max_value=(2))
         
     with col2:
         
@@ -34,7 +34,7 @@ if (selected == 'Home'):
         
     with col2:
         
-        restecg = st.number_input('Resting ECG (Normal or Abnormal)', min_value=(0), max_value=(1))
+        restecg = st.number_input('Resting ECG (0 - 3)', min_value=(0), max_value=(2))
     
     with col2:
         
@@ -46,11 +46,11 @@ if (selected == 'Home'):
 
     with col3:
     
-        thal = st.number_input('Thallasemia', min_value=(0), max_value=(3))
+        thal = st.number_input('Thalassemia', min_value=(0), max_value=(3))
     
     with col3:
         
-        heart_diagnosis = 'IF THIS TEXT IS SHOWING PLEASE RE-INPUT YOUR DATA'
+        heart_diagnosis = 'IF THIS TEXT IS SHOWING PLEASE INPUT YOUR DATA'
     
     if st.button('See Results'):
        A = something_model.predict([[age, sex, cp, fbs, restecg, thalach, exang, thal]])
