@@ -22,7 +22,7 @@ if (selected == 'Home'):
         
     with col1:
         
-        sex = st.text_input('Sex', ('male', 'female'))
+        sex = st.select_box('sex', 'male', 'female')
         male=1; female=0;
     
     with col1:
