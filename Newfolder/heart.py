@@ -22,7 +22,8 @@ if (selected == 'Home'):
         
     with col1:
         
-        sex = st.number_input('Sex (1 = Male 0 = Female)', min_value=(0), max_value=(1))
+        sex = st.select_option('Sex', 'male', 'female')
+        male=1; female=0;
     
     with col1:
         
