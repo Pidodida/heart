@@ -22,8 +22,7 @@ if (selected == 'Home'):
         
     with col1:
         
-        sex = st.selectbox('sex', 'male', 'female')
-        male=1; female=0;
+        sex = st.number_input('Sex (1=male 0=female)',max_value=(1), min_value(0)
     
     with col1:
         
