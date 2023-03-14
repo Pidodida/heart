@@ -22,7 +22,8 @@ if (selected == 'Home'):
         
     with col1:
         
-        sex = st.selectbox(Sex, male, female)
+        sex = st.selectbox(Sex, 'male', 'female')
+        male=1; female=0;
     
     with col1:
         
