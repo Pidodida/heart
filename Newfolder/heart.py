@@ -22,7 +22,7 @@ if (selected == 'Home'):
         
     with col1:
         
-        sex = st.number_input('Sex', min_value=(0), max_value=(1)
+        sex = st.number_input('Sex', min_value=(0), max_value=(1))
     
     with col1:
         
